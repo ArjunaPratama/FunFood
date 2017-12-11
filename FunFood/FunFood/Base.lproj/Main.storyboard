@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5DA-hr-lcu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="TimesNewRomanBold.ttf">
+            <string>TimesNewRomanPS-BoldMT</string>
+        </array>
+        <array key="TimesNewRomanBoldItalic.ttf">
+            <string>TimesNewRomanPS-BoldItalicMT</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--HOME-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FunFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c7p-xj-4Xk">
+                                <rect key="frame" x="16" y="436" width="359" height="158"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Appilkasi "Fun Food" merupakan sebuah applikasi yang bertujuan untuk memberitahukan kepada pecinta kuliner yang ingin menyicipi makanan tradisional di JOGJA</string>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldMT" family="Times New Roman" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="HOME" image="dinner (1)" selectedImage="dinner (1)" id="Hnr-bU-3pL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685.60000000000002" y="-112.89355322338831"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="qRf-Nk-drl">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="5DA-hr-lcu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mEJ-Tn-o3O">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Zzg-L4-9ez"/>
+                        <segue destination="qhv-ML-PbA" kind="relationship" relationship="viewControllers" id="BIh-hW-BlL"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2DB-hs-iIQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-163.19999999999999" y="133.13343328335833"/>
+        </scene>
+        <!--MENU-->
+        <scene sceneID="KRY-yP-2yy">
+            <objects>
+                <tableViewController id="qhv-ML-PbA" customClass="MakananTableViewController" customModule="FunFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZWS-Gj-vUE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="94" id="0Qt-3A-0U0" customClass="MakananTableViewCell" customModule="FunFood" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="94"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0Qt-3A-0U0" id="enT-IK-N1f">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="93.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="food" translatesAutoresizingMaskIntoConstraints="NO" id="jEn-Ue-lYw">
+                                            <rect key="frame" x="0.0" y="-48" width="375" height="614"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="jEn-Ue-lYw" secondAttribute="height" multiplier="375:614" id="Hwd-xX-qKG"/>
+                                                <constraint firstAttribute="height" constant="614" id="gkY-Mf-dVY"/>
+                                                <constraint firstAttribute="width" constant="375" id="lEQ-g2-gGZ"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nama Makanan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yrH-Xf-7uD">
+                                            <rect key="frame" x="16" y="36" width="343" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="23"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="jEn-Ue-lYw" secondAttribute="trailing" id="0yd-sk-Xfz"/>
+                                        <constraint firstAttribute="bottom" secondItem="jEn-Ue-lYw" secondAttribute="bottom" constant="-472.5" id="KfU-Un-uTd"/>
+                                        <constraint firstItem="jEn-Ue-lYw" firstAttribute="top" secondItem="enT-IK-N1f" secondAttribute="top" constant="-48" id="mq8-qk-X0o"/>
+                                        <constraint firstItem="jEn-Ue-lYw" firstAttribute="leading" secondItem="enT-IK-N1f" secondAttribute="leading" id="yid-Jj-h5H"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="labeljudul" destination="yrH-Xf-7uD" id="eqa-qY-WTi"/>
+                                    <segue destination="0H7-CR-UKz" kind="modal" identifier="PassData" id="AYD-NP-d5x"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="qhv-ML-PbA" id="qcC-NV-KHJ"/>
+                            <outlet property="delegate" destination="qhv-ML-PbA" id="lBy-4D-YMv"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="MENU" image="menu (1)" selectedImage="menu (1)" id="8xu-tA-BS7"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ogu-X3-hjc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="685.60000000000002" y="664.31784107946032"/>
+        </scene>
+        <!--Isi View Controller-->
+        <scene sceneID="MdM-72-PHZ">
+            <objects>
+                <viewController id="0H7-CR-UKz" customClass="IsiViewController" customModule="FunFood" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vLw-8M-uhG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VXJ-8p-svK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="7Pv-ny-VKv"/>
+                                    <constraint firstAttribute="width" constant="375" id="I7h-eD-W12"/>
+                                    <constraint firstAttribute="width" secondItem="VXJ-8p-svK" secondAttribute="height" multiplier="375:44" id="jtI-aG-jKG"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="MAKANAN JOGJA " id="Ih8-DI-xMx">
+                                        <barButtonItem key="leftBarButtonItem" title="BACK" id="CGC-LG-16c">
+                                            <connections>
+                                                <segue destination="5DA-hr-lcu" kind="modal" id="f0D-V3-2tL"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nama Makanan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r7b-EW-LUY">
+                                <rect key="frame" x="16" y="80" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9cx-RO-loO"/>
+                                    <constraint firstAttribute="width" constant="343" id="W6G-y7-yeA"/>
+                                    <constraint firstAttribute="width" secondItem="r7b-EW-LUY" secondAttribute="height" multiplier="49:3" id="p2z-Fr-zVd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPS-BoldItalicMT" family="Times New Roman" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Isi Makanan" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100000000" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DEV-wY-l6H">
+                                <rect key="frame" x="16" y="141" width="343" height="497"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="QBK-Gn-epM"/>
+                                    <constraint firstAttribute="height" constant="497" id="h2R-6l-azb"/>
+                                    <constraint firstAttribute="width" secondItem="DEV-wY-l6H" secondAttribute="height" multiplier="49:71" id="jhc-N1-vB9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ejh-p4-1fy" firstAttribute="bottom" secondItem="DEV-wY-l6H" secondAttribute="bottom" constant="29" id="9ND-Sd-uN7"/>
+                            <constraint firstItem="r7b-EW-LUY" firstAttribute="top" secondItem="VXJ-8p-svK" secondAttribute="bottom" constant="36" id="RC8-4A-xF0"/>
+                            <constraint firstItem="VXJ-8p-svK" firstAttribute="trailing" secondItem="ejh-p4-1fy" secondAttribute="trailing" id="S84-6d-D8x"/>
+                            <constraint firstItem="r7b-EW-LUY" firstAttribute="leading" secondItem="ejh-p4-1fy" secondAttribute="leading" constant="16" id="UCy-zx-z18"/>
+                            <constraint firstItem="DEV-wY-l6H" firstAttribute="top" secondItem="r7b-EW-LUY" secondAttribute="bottom" constant="40" id="Ysu-ag-mI9"/>
+                            <constraint firstItem="DEV-wY-l6H" firstAttribute="leading" secondItem="ejh-p4-1fy" secondAttribute="leading" constant="16" id="bTU-B9-Drv"/>
+                            <constraint firstItem="VXJ-8p-svK" firstAttribute="leading" secondItem="ejh-p4-1fy" secondAttribute="leading" id="f6Z-3q-ueM"/>
+                            <constraint firstItem="VXJ-8p-svK" firstAttribute="top" secondItem="vLw-8M-uhG" secondAttribute="top" id="n5H-aN-yPV"/>
+                            <constraint firstItem="DEV-wY-l6H" firstAttribute="top" secondItem="r7b-EW-LUY" secondAttribute="bottom" constant="40" id="oyi-jd-jom"/>
+                            <constraint firstItem="ejh-p4-1fy" firstAttribute="trailing" secondItem="r7b-EW-LUY" secondAttribute="trailing" constant="16" id="qJ1-F5-lkf"/>
+                            <constraint firstItem="ejh-p4-1fy" firstAttribute="trailing" secondItem="DEV-wY-l6H" secondAttribute="trailing" constant="16" id="wKW-TZ-WDz"/>
+                            <constraint firstItem="r7b-EW-LUY" firstAttribute="top" secondItem="VXJ-8p-svK" secondAttribute="bottom" constant="36" id="xmX-Yp-0yZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ejh-p4-1fy"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblisi" destination="DEV-wY-l6H" id="6Wm-Dk-b5O"/>
+                        <outlet property="lblnama" destination="r7b-EW-LUY" id="VpW-gg-M6v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rgV-do-Qip" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1444" y="707.49625187406298"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="dinner (1)" width="24" height="24"/>
+        <image name="food" width="324" height="576"/>
+        <image name="menu (1)" width="24" height="24"/>
+    </resources>
+</document>
